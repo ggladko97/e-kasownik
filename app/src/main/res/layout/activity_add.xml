@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ADD PRODUCT"
+        android:textSize="30dp"
+        android:textColor="#8AE32B"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:id="@+id/txtTitle"
+        android:textColor="#4ef706" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Volume"
+        android:id="@+id/txtVolume"
+        android:textColor="#2cf229" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price per unit"
+        android:id="@+id/txtPrice"
+        android:textColor="#2cf229" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:id="@+id/txtQuantity"
+        android:textColor="#2cf229" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmitAddingProduct"
+        android:text="SUBMIT"
+        android:background="@drawable/button"
+        android:layout_gravity="center_horizontal"
+        style="@style/buttonStyle"
+        android:layout_marginTop="15dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:id="@+id/btnBack"
+        style="@style/buttonStyle"
+        android:background="@drawable/button" />
+
+    <Button
+        style="@style/buttonStyle"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:text="Manage"
+        android:id="@+id/buttonManage"
+        android:background="@drawable/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.73" />
+
+</LinearLayout>
