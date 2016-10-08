@@ -37,6 +37,10 @@ public class TableActivity extends Activity {
         tablesCount = intentTablesCounter.getIntExtra("TableCount", 0);
         Log.i("table count: ",String.valueOf(tablesCount));
 
+        Intent intentPriceresultPLU = getIntent();
+        double currentPriceResulPLU=intentPriceresultPLU.getDoubleExtra("Price",0.0);
+
+
         intentTableHashMap = new HashMap<>(tablesCount);
         Log.i("initializing hashtab","start OK");
         for (int k = 1; k <= tablesCount; k++) {
